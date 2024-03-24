@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Gửi tin nhắn</description>
+   <name>TC3_SendMessage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb5da1d2-1bfb-456e-a172-9a0ab41ef589</testCaseGuid>
+</TestCaseEntity>
