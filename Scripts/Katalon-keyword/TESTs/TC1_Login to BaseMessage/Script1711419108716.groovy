@@ -17,17 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('LoginPage/txtEmail'), 'thoannv@realtel.vn')
-
-WebUI.setText(findTestObject('LoginPage/txtPassword'), 'Thoan123456')
-
-WebUI.click(findTestObject('LoginPage/btnLogin'))
-
-if (WebUI.verifyElementNotVisible(findTestObject('HomePage/dialog_notification-request')) != true) {
-	WebUI.takeElementScreenshot('HomePage/dialog_notification-request', findTestObject('HomePage/dialog_notification-request'))
-	WebUI.click(findTestObject('HomePage/btnNotification-request_tiepTuc'))
-}
-
-if (WebUI.verifyElementVisible(findTestObject('HomePage/btnClose-noti-community'))) {
-	WebUI.click(findTestObject('HomePage/btnClose-noti-community'))
-}
+WebUI.callTestCase(findTestCase('Katalon-keyword/Page/LoginPage/Login'), [('email') : 'thoannv@realtel.vn', ('password') : 'Thoan123456'], 
+    FailureHandling.CONTINUE_ON_FAILURE)

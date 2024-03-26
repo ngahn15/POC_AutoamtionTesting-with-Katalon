@@ -38,6 +38,5 @@ if (WebUI.verifyElementVisible(findTestObject('HomePage/btnClose-noti-community'
 	WebUI.click(findTestObject('HomePage/btnClose-noti-community'))
 }
 
-
 WebUI.closeBrowser()
 

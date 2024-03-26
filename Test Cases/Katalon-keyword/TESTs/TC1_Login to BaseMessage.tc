@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>TC1_Login to BaseMessage</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c155c9eb-aa82-4e46-961d-0905fd038681</testCaseGuid>
+   <testCaseGuid>071d13a8-4e4e-48fc-97cf-f39b4802abb1</testCaseGuid>
 </TestCaseEntity>

@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.setText(findTestObject('LoginPage/txtEmail'), email)
+
+WebUI.setText(findTestObject('LoginPage/txtPassword'), password)
+
+WebUI.click(findTestObject('LoginPage/btnLogin'))
+
+if (WebUI.verifyElementNotVisible(findTestObject('HomePage/dialog_notification-request')) != true) {
+	WebUI.takeElementScreenshot('HomePage/dialog_notification-request', findTestObject('HomePage/dialog_notification-request'))
+	WebUI.click(findTestObject('HomePage/btnNotification-request_tiepTuc'))
+}
+
+if (WebUI.verifyElementVisible(findTestObject('HomePage/btnClose-noti-community'))) {
+	WebUI.click(findTestObject('HomePage/btnClose-noti-community'))
+}
