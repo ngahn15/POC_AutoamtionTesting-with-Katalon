@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC1_Login and goto Base Message</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c8df7f19-5a6e-4acb-9137-4c03ef22d792</testCaseGuid>
-</TestCaseEntity>

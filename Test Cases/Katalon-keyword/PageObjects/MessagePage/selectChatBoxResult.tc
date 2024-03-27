@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>selectChatBoxResult</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>daa3d31b-75a0-4733-a98f-134c89f76510</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>457edde2-4056-44d1-9e59-9a7dcc1065f8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>457edde2-4056-44d1-9e59-9a7dcc1065f8</id>
+      <masked>false</masked>
+      <name>nameChannel</name>
+   </variable>
+</TestCaseEntity>

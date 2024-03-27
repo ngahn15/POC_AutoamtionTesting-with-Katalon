@@ -11,7 +11,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>5</initValue>
-      <name>timeOut</name>
+      <initValue>'thoannv@realtel.vn'</initValue>
+      <name>email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Thoan123456'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>element_timeout</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

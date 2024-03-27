@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verifyLoginPageLoaded()</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe0c44b0-275d-488a-9e34-4edb690dd33c</testCaseGuid>
+</TestCaseEntity>

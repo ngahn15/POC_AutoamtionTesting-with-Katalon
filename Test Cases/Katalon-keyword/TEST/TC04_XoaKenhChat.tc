@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_XoaKenhChat</name>
+   <tag>TC04</tag>
+   <comment></comment>
+   <testCaseGuid>1e7fb17c-40b8-4e30-8073-3b5b4c13b908</testCaseGuid>
+</TestCaseEntity>

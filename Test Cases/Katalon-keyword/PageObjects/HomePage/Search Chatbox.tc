@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search Chatbox</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7404be17-5621-4f5b-8c36-ba0cca321770</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e53b0ccb-e403-48ec-9a50-23ce17a44497</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e53b0ccb-e403-48ec-9a50-23ce17a44497</id>
+      <masked>false</masked>
+      <name>nameChannel</name>
+   </variable>
+</TestCaseEntity>

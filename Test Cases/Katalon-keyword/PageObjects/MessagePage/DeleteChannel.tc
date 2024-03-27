@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DeleteChannel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2badbc19-f76d-40dd-917e-2ec9fc8a9b83</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>604917c1-e037-4407-abe6-b2878d757fb6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>604917c1-e037-4407-abe6-b2878d757fb6</id>
+      <masked>false</masked>
+      <name>nameChannel</name>
+   </variable>
+</TestCaseEntity>

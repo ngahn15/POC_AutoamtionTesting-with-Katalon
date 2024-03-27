@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify delete chat channel successfully</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8355e15-4cb6-4ab0-843b-f3074b94f08e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c1a9c4a9-cf46-4a68-afc4-0a79ace283ca</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c1a9c4a9-cf46-4a68-afc4-0a79ace283ca</id>
+      <masked>false</masked>
+      <name>nameChannel</name>
+   </variable>
+</TestCaseEntity>
