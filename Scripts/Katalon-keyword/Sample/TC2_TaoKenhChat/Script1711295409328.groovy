@@ -21,7 +21,7 @@ WebUI.openBrowser('https://message.basestg.com')
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('Katalon-keyword/PageObjects/LoginPage/login(username, password)'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/LoginPage/login(username, password)'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('HomePage/menuItem/btnMoreAction'), 5)
 

@@ -17,32 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://message.basestg.com')
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/HomePage/Search Chatbox'), [('nameChannel') : nameChannel],
+	FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/LoginPage/login(username, password)'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/HomePage/selectChatBoxResult'), [('nameChannel') : nameChannel],
+	FailureHandling.CONTINUE_ON_FAILURE)
 
-nameChannel = WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementClickable(findTestObject('HomePage/ListChatBox/btnTimKiem'), 5)
-
-WebUI.click(findTestObject('HomePage/ListChatBox/btnTimKiem'))
-
-WebUI.sendKeys(findTestObject('HomePage/TimKiemDialog/txtTimKiem'), nameChannel)
-
-WebUI.click(findTestObject('HomePage/TimKiemDialog/search-tabs', [('tabName') : 'Kênh']))
-
-WebUI.waitForElementClickable(findTestObject('HomePage/TimKiemDialog/result-item', [('nameChannel') : nameChannel]), 5)
-
-WebUI.click(findTestObject('HomePage/TimKiemDialog/result-item', [('nameChannel') : nameChannel]))
-
-WebUI.setText(findTestObject('MessagesPage/txtChatBox'), 'hello world')
+WebUI.setText(findTestObject('MessagesPage/txtChatBox'), sMessage)
 
 WebUI.click(findTestObject('MessagesPage/btnSend'))
-
-WebUI.verifyElementPresent(findTestObject('MessagesPage/channel-messages'), 5)
-
-WebUI.takeElementScreenshotAsCheckpoint('chanelMessages', findTestObject('MessagesPage/channel-messages'))
-
-return nameChannel

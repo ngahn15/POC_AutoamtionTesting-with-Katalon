@@ -17,32 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://message.basestg.com')
+WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/HomePage/Search Chatbox'), [('nameChannel') : nameChannel], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/HomePage/selectChatBoxResult'), [('nameChannel') : nameChannel],
+	FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Katalon-keyword/Advance/PageObjects/LoginPage/login(username, password)'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementClickable(findTestObject('MessagesPage/btnMenu'), GlobalVariable.element_timeout)
 
-nameChannel = WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('MessagesPage/btnMenu'))
 
-WebUI.waitForElementClickable(findTestObject('HomePage/ListChatBox/btnTimKiem'), 5)
+WebUI.waitForElementClickable(findTestObject('MessagesPage/btnMenuItem', [('btnName') : 'Xóa kênh này']), GlobalVariable.element_timeout)
 
-WebUI.click(findTestObject('HomePage/ListChatBox/btnTimKiem'))
+WebUI.click(findTestObject('MessagesPage/btnMenuItem', [('btnName') : 'Xóa kênh này']))
 
-WebUI.sendKeys(findTestObject('HomePage/TimKiemDialog/txtTimKiem'), nameChannel)
+WebUI.waitForElementPresent(findTestObject('MessagesPage/DeleteDialog'), GlobalVariable.element_timeout)
 
-WebUI.click(findTestObject('HomePage/TimKiemDialog/search-tabs', [('tabName') : 'Kênh']))
+WebUI.takeElementScreenshotAsCheckpoint('DeleteDialog', findTestObject('MessagesPage/DeleteDialog'))
 
-WebUI.waitForElementClickable(findTestObject('HomePage/TimKiemDialog/result-item', [('nameChannel') : nameChannel]), 5)
+WebUI.waitForElementClickable(findTestObject('MessagesPage/btn-confirm-delete-box', [('btnName') : 'Xác nhận xóa']), GlobalVariable.element_timeout)
 
-WebUI.click(findTestObject('HomePage/TimKiemDialog/result-item', [('nameChannel') : nameChannel]))
+WebUI.delay(10)
 
-WebUI.setText(findTestObject('MessagesPage/txtChatBox'), 'hello world')
+WebUI.click(findTestObject('MessagesPage/btn-confirm-delete-box', [('btnName') : 'Xác nhận xóa']))
 
-WebUI.click(findTestObject('MessagesPage/btnSend'))
-
-WebUI.verifyElementPresent(findTestObject('MessagesPage/channel-messages'), 5)
-
-WebUI.takeElementScreenshotAsCheckpoint('chanelMessages', findTestObject('MessagesPage/channel-messages'))
-
-return nameChannel
